@@ -13,6 +13,11 @@
 		A22EDCCD198791600031DDF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A22EDCCB198791600031DDF5 /* Main.storyboard */; };
 		A22EDCCF198791600031DDF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22EDCCE198791600031DDF5 /* Images.xcassets */; };
 		A22EDCDB198791600031DDF5 /* SampleTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A22EDCDA198791600031DDF5 /* SampleTimerTests.m */; };
+		A22EDD1D198793160031DDF5 /* SampleTimerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A22EDD1C198793160031DDF5 /* SampleTimerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A22EDD23198793160031DDF5 /* SampleTimerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22EDD18198793160031DDF5 /* SampleTimerKit.framework */; };
+		A22EDD2A198793160031DDF5 /* SampleTimerKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A22EDD29198793160031DDF5 /* SampleTimerKitTests.m */; };
+		A22EDD2D198793160031DDF5 /* SampleTimerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22EDD18198793160031DDF5 /* SampleTimerKit.framework */; };
+		A22EDD2E198793160031DDF5 /* SampleTimerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A22EDD18198793160031DDF5 /* SampleTimerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +28,49 @@
 			remoteGlobalIDString = A22EDCBD198791600031DDF5;
 			remoteInfo = SampleTimer;
 		};
+		A22EDD24198793160031DDF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A22EDCB6198791600031DDF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A22EDD17198793160031DDF5;
+			remoteInfo = SampleTimerKit;
+		};
+		A22EDD2B198793160031DDF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A22EDCB6198791600031DDF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A22EDD17198793160031DDF5;
+			remoteInfo = SampleTimerKit;
+		};
+		A22EDD2F198793160031DDF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A22EDCB6198791600031DDF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A22EDD17198793160031DDF5;
+			remoteInfo = SampleTimerKit;
+		};
+		A22EDD38198793170031DDF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A22EDCB6198791600031DDF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A22EDD17198793160031DDF5;
+			remoteInfo = SampleTimerKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A22EDD34198793160031DDF5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A22EDD2E198793160031DDF5 /* SampleTimerKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A22EDCBE198791600031DDF5 /* SampleTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +85,12 @@
 		A22EDCD4198791600031DDF5 /* SampleTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22EDCD9198791600031DDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A22EDCDA198791600031DDF5 /* SampleTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleTimerTests.m; sourceTree = "<group>"; };
+		A22EDD18198793160031DDF5 /* SampleTimerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SampleTimerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A22EDD1B198793160031DDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A22EDD1C198793160031DDF5 /* SampleTimerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleTimerKit.h; sourceTree = "<group>"; };
+		A22EDD22198793160031DDF5 /* SampleTimerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTimerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A22EDD28198793160031DDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A22EDD29198793160031DDF5 /* SampleTimerKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleTimerKitTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22EDD2D198793160031DDF5 /* SampleTimerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +106,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A22EDD14198793160031DDF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A22EDD1F198793160031DDF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A22EDD23198793160031DDF5 /* SampleTimerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +132,8 @@
 			children = (
 				A22EDCC0198791600031DDF5 /* SampleTimer */,
 				A22EDCD7198791600031DDF5 /* SampleTimerTests */,
+				A22EDD19198793160031DDF5 /* SampleTimerKit */,
+				A22EDD26198793160031DDF5 /* SampleTimerKitTests */,
 				A22EDCBF198791600031DDF5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +143,8 @@
 			children = (
 				A22EDCBE198791600031DDF5 /* SampleTimer.app */,
 				A22EDCD4198791600031DDF5 /* SampleTimerTests.xctest */,
+				A22EDD18198793160031DDF5 /* SampleTimerKit.framework */,
+				A22EDD22198793160031DDF5 /* SampleTimerKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,7 +189,52 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A22EDD19198793160031DDF5 /* SampleTimerKit */ = {
+			isa = PBXGroup;
+			children = (
+				A22EDD1C198793160031DDF5 /* SampleTimerKit.h */,
+				A22EDD1A198793160031DDF5 /* Supporting Files */,
+			);
+			path = SampleTimerKit;
+			sourceTree = "<group>";
+		};
+		A22EDD1A198793160031DDF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A22EDD1B198793160031DDF5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A22EDD26198793160031DDF5 /* SampleTimerKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				A22EDD29198793160031DDF5 /* SampleTimerKitTests.m */,
+				A22EDD27198793160031DDF5 /* Supporting Files */,
+			);
+			path = SampleTimerKitTests;
+			sourceTree = "<group>";
+		};
+		A22EDD27198793160031DDF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A22EDD28198793160031DDF5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A22EDD15198793160031DDF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A22EDD1D198793160031DDF5 /* SampleTimerKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		A22EDCBD198791600031DDF5 /* SampleTimer */ = {
@@ -126,10 +244,13 @@
 				A22EDCBA198791600031DDF5 /* Sources */,
 				A22EDCBB198791600031DDF5 /* Frameworks */,
 				A22EDCBC198791600031DDF5 /* Resources */,
+				A22EDD34198793160031DDF5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A22EDD2C198793160031DDF5 /* PBXTargetDependency */,
+				A22EDD30198793160031DDF5 /* PBXTargetDependency */,
 			);
 			name = SampleTimer;
 			productName = SampleTimer;
@@ -154,6 +275,43 @@
 			productReference = A22EDCD4198791600031DDF5 /* SampleTimerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A22EDD17198793160031DDF5 /* SampleTimerKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A22EDD31198793160031DDF5 /* Build configuration list for PBXNativeTarget "SampleTimerKit" */;
+			buildPhases = (
+				A22EDD13198793160031DDF5 /* Sources */,
+				A22EDD14198793160031DDF5 /* Frameworks */,
+				A22EDD15198793160031DDF5 /* Headers */,
+				A22EDD16198793160031DDF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleTimerKit;
+			productName = SampleTimerKit;
+			productReference = A22EDD18198793160031DDF5 /* SampleTimerKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A22EDD21198793160031DDF5 /* SampleTimerKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A22EDD35198793160031DDF5 /* Build configuration list for PBXNativeTarget "SampleTimerKitTests" */;
+			buildPhases = (
+				A22EDD1E198793160031DDF5 /* Sources */,
+				A22EDD1F198793160031DDF5 /* Frameworks */,
+				A22EDD20198793160031DDF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A22EDD25198793160031DDF5 /* PBXTargetDependency */,
+				A22EDD39198793170031DDF5 /* PBXTargetDependency */,
+			);
+			name = SampleTimerKitTests;
+			productName = SampleTimerKitTests;
+			productReference = A22EDD22198793160031DDF5 /* SampleTimerKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -169,6 +327,13 @@
 					A22EDCD3198791600031DDF5 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = A22EDCBD198791600031DDF5;
+					};
+					A22EDD17198793160031DDF5 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					A22EDD21198793160031DDF5 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = A22EDD17198793160031DDF5;
 					};
 				};
 			};
@@ -187,6 +352,8 @@
 			targets = (
 				A22EDCBD198791600031DDF5 /* SampleTimer */,
 				A22EDCD3198791600031DDF5 /* SampleTimerTests */,
+				A22EDD17198793160031DDF5 /* SampleTimerKit */,
+				A22EDD21198793160031DDF5 /* SampleTimerKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +369,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A22EDCD2198791600031DDF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A22EDD16198793160031DDF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A22EDD20198793160031DDF5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -229,6 +410,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A22EDD13198793160031DDF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A22EDD1E198793160031DDF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A22EDD2A198793160031DDF5 /* SampleTimerKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +432,26 @@
 			isa = PBXTargetDependency;
 			target = A22EDCBD198791600031DDF5 /* SampleTimer */;
 			targetProxy = A22EDCD5198791600031DDF5 /* PBXContainerItemProxy */;
+		};
+		A22EDD25198793160031DDF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A22EDD17198793160031DDF5 /* SampleTimerKit */;
+			targetProxy = A22EDD24198793160031DDF5 /* PBXContainerItemProxy */;
+		};
+		A22EDD2C198793160031DDF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A22EDD17198793160031DDF5 /* SampleTimerKit */;
+			targetProxy = A22EDD2B198793160031DDF5 /* PBXContainerItemProxy */;
+		};
+		A22EDD30198793160031DDF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A22EDD17198793160031DDF5 /* SampleTimerKit */;
+			targetProxy = A22EDD2F198793160031DDF5 /* PBXContainerItemProxy */;
+		};
+		A22EDD39198793170031DDF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A22EDD17198793160031DDF5 /* SampleTimerKit */;
+			targetProxy = A22EDD38198793170031DDF5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -383,6 +599,78 @@
 			};
 			name = Release;
 		};
+		A22EDD32198793160031DDF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SampleTimerKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A22EDD33198793160031DDF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SampleTimerKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A22EDD36198793160031DDF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SampleTimerKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A22EDD37198793160031DDF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SampleTimerKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -408,6 +696,22 @@
 			buildConfigurations = (
 				A22EDCE2198791600031DDF5 /* Debug */,
 				A22EDCE3198791600031DDF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A22EDD31198793160031DDF5 /* Build configuration list for PBXNativeTarget "SampleTimerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A22EDD32198793160031DDF5 /* Debug */,
+				A22EDD33198793160031DDF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A22EDD35198793160031DDF5 /* Build configuration list for PBXNativeTarget "SampleTimerKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A22EDD36198793160031DDF5 /* Debug */,
+				A22EDD37198793160031DDF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
