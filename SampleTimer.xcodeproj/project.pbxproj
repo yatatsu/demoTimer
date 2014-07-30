@@ -18,6 +18,9 @@
 		A22EDD2A198793160031DDF5 /* SampleTimerKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A22EDD29198793160031DDF5 /* SampleTimerKitTests.m */; };
 		A22EDD2D198793160031DDF5 /* SampleTimerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22EDD18198793160031DDF5 /* SampleTimerKit.framework */; };
 		A22EDD2E198793160031DDF5 /* SampleTimerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A22EDD18198793160031DDF5 /* SampleTimerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A22EDD4A1987A04B0031DDF5 /* STKTimerView.h in Headers */ = {isa = PBXBuildFile; fileRef = A22EDD481987A04B0031DDF5 /* STKTimerView.h */; };
+		A22EDD4B1987A04B0031DDF5 /* STKTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A22EDD491987A04B0031DDF5 /* STKTimerView.m */; };
+		A22EDD4F1987A3950031DDF5 /* STKTimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A22EDD4E1987A3950031DDF5 /* STKTimerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,41 @@
 			remoteInfo = SampleTimerKit;
 		};
 		A22EDD38198793170031DDF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A22EDCB6198791600031DDF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A22EDD17198793160031DDF5;
+			remoteInfo = SampleTimerKit;
+		};
+		A22EDD3A198793170031DDF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A22EDCB6198791600031DDF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A22EDD17198793160031DDF5;
+			remoteInfo = SampleTimerKit;
+		};
+		A22EDD3C198793170031DDF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A22EDCB6198791600031DDF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A22EDD17198793160031DDF5;
+			remoteInfo = SampleTimerKit;
+		};
+		A22EDD3E198793170031DDF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A22EDCB6198791600031DDF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A22EDD17198793160031DDF5;
+			remoteInfo = SampleTimerKit;
+		};
+		A22EDD441987943A0031DDF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A22EDCB6198791600031DDF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A22EDD17198793160031DDF5;
+			remoteInfo = SampleTimerKit;
+		};
+		A22EDD4C1987A2F80031DDF5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A22EDCB6198791600031DDF5 /* Project object */;
 			proxyType = 1;
@@ -91,6 +129,9 @@
 		A22EDD22198793160031DDF5 /* SampleTimerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTimerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22EDD28198793160031DDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A22EDD29198793160031DDF5 /* SampleTimerKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleTimerKitTests.m; sourceTree = "<group>"; };
+		A22EDD481987A04B0031DDF5 /* STKTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKTimerView.h; sourceTree = "<group>"; };
+		A22EDD491987A04B0031DDF5 /* STKTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKTimerView.m; sourceTree = "<group>"; };
+		A22EDD4E1987A3950031DDF5 /* STKTimerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STKTimerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +235,9 @@
 			children = (
 				A22EDD1C198793160031DDF5 /* SampleTimerKit.h */,
 				A22EDD1A198793160031DDF5 /* Supporting Files */,
+				A22EDD481987A04B0031DDF5 /* STKTimerView.h */,
+				A22EDD491987A04B0031DDF5 /* STKTimerView.m */,
+				A22EDD4E1987A3950031DDF5 /* STKTimerView.xib */,
 			);
 			path = SampleTimerKit;
 			sourceTree = "<group>";
@@ -230,6 +274,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22EDD4A1987A04B0031DDF5 /* STKTimerView.h in Headers */,
 				A22EDD1D198793160031DDF5 /* SampleTimerKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +351,11 @@
 			dependencies = (
 				A22EDD25198793160031DDF5 /* PBXTargetDependency */,
 				A22EDD39198793170031DDF5 /* PBXTargetDependency */,
+				A22EDD3B198793170031DDF5 /* PBXTargetDependency */,
+				A22EDD3D198793170031DDF5 /* PBXTargetDependency */,
+				A22EDD3F198793170031DDF5 /* PBXTargetDependency */,
+				A22EDD451987943A0031DDF5 /* PBXTargetDependency */,
+				A22EDD4D1987A2F80031DDF5 /* PBXTargetDependency */,
 			);
 			name = SampleTimerKitTests;
 			productName = SampleTimerKitTests;
@@ -379,6 +429,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22EDD4F1987A3950031DDF5 /* STKTimerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22EDD4B1987A04B0031DDF5 /* STKTimerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +504,31 @@
 			isa = PBXTargetDependency;
 			target = A22EDD17198793160031DDF5 /* SampleTimerKit */;
 			targetProxy = A22EDD38198793170031DDF5 /* PBXContainerItemProxy */;
+		};
+		A22EDD3B198793170031DDF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A22EDD17198793160031DDF5 /* SampleTimerKit */;
+			targetProxy = A22EDD3A198793170031DDF5 /* PBXContainerItemProxy */;
+		};
+		A22EDD3D198793170031DDF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A22EDD17198793160031DDF5 /* SampleTimerKit */;
+			targetProxy = A22EDD3C198793170031DDF5 /* PBXContainerItemProxy */;
+		};
+		A22EDD3F198793170031DDF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A22EDD17198793160031DDF5 /* SampleTimerKit */;
+			targetProxy = A22EDD3E198793170031DDF5 /* PBXContainerItemProxy */;
+		};
+		A22EDD451987943A0031DDF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A22EDD17198793160031DDF5 /* SampleTimerKit */;
+			targetProxy = A22EDD441987943A0031DDF5 /* PBXContainerItemProxy */;
+		};
+		A22EDD4D1987A2F80031DDF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A22EDD17198793160031DDF5 /* SampleTimerKit */;
+			targetProxy = A22EDD4C1987A2F80031DDF5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -602,6 +679,7 @@
 		A22EDD32198793160031DDF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -616,6 +694,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -625,6 +704,7 @@
 		A22EDD33198793160031DDF5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -690,6 +770,7 @@
 				A22EDCE0198791600031DDF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A22EDCE1198791600031DDF5 /* Build configuration list for PBXNativeTarget "SampleTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -698,6 +779,7 @@
 				A22EDCE3198791600031DDF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A22EDD31198793160031DDF5 /* Build configuration list for PBXNativeTarget "SampleTimerKit" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +788,7 @@
 				A22EDD33198793160031DDF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A22EDD35198793160031DDF5 /* Build configuration list for PBXNativeTarget "SampleTimerKitTests" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +797,7 @@
 				A22EDD37198793160031DDF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
