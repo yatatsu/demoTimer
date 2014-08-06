@@ -10,7 +10,8 @@
 
 @interface STKTimerView ()
 {
-    NSInteger _count;
+    CGPoint _handOrigin; // 針の中心
+    CGPoint _handPoint; // 針の先端
 }
 
 @end
@@ -21,7 +22,6 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        _count = 10;
     }
     return self;
 }
@@ -31,48 +31,23 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     // Drawing code
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGRect frame = self.bounds;
-    CGContextSetLineWidth(context, 10);
-    CGRectInset(frame, 5, 5);
-    [[UIColor greenColor] set];
-    UIRectFrame(frame);
+    self.layer.cornerRadius = rect.size.width / 2;
+    self.clipsToBounds = YES;
     
-    [self setCount];
-    [self startTimer];
+    [self.bgColor setFill];
+    UIRectFill(rect);
+    
+    [super drawRect:rect];
 }
 
-- (void)setCount
+- (void)animate
 {
-    self.numberLabel.text = [NSString stringWithFormat:@"%@", @(_count)];
-    if (_count == 0) {
-        self.numberLabel.textColor = self.stopColor;
-    }
+    // TODO...
 }
 
-- (void)startTimer
+- (void)drawHand:(CGRect)rect
 {
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerDidFire:) userInfo:nil repeats:YES];
-    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
-}
-
-- (void)stopTimer
-{
-    if ([self.timer isValid]) {
-        [self.timer invalidate];
-        self.timer = nil;
-    }
-}
-
-- (void)timerDidFire:(NSTimer *)timer
-{
-    if (_count > 0) {
-        _count--;
-        [self setCount];
-        [self setNeedsLayout];
-    } else {
-        [self stopTimer];
-    }
+    // TODO...
 }
 
 @end

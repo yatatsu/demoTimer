@@ -12,12 +12,7 @@ IB_DESIGNABLE
 
 @interface STKTimerView : UIView
 
-@property (nonatomic, weak) IBOutlet UILabel *numberLabel;
-
-@property (nonatomic, strong) IBInspectable UIColor *stopColor;
-@property (nonatomic, strong) IBInspectable UIColor *activeColor;
-@property (nonatomic, assign) IBInspectable NSInteger numberFontSize;
-
-@property (nonatomic, strong) NSTimer *timer;
+@property (nonatomic, strong) IBInspectable UIColor *bgColor;
+@property (nonatomic, strong) IBInspectable UIColor *handColor;
 
 @end

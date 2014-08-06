@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440268D51992768A0004BB82 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440268D41992768A0004BB82 /* QuartzCore.framework */; };
 		A22EDCC4198791600031DDF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A22EDCC3198791600031DDF5 /* main.m */; };
 		A22EDCC7198791600031DDF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A22EDCC6198791600031DDF5 /* AppDelegate.m */; };
 		A22EDCCA198791600031DDF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A22EDCC9198791600031DDF5 /* ViewController.m */; };
@@ -111,6 +112,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		440268D41992768A0004BB82 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A22EDCBE198791600031DDF5 /* SampleTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22EDCC2198791600031DDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A22EDCC3198791600031DDF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				440268D51992768A0004BB82 /* QuartzCore.framework in Frameworks */,
 				A22EDD2D198793160031DDF5 /* SampleTimerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,6 +174,7 @@
 		A22EDCB5198791600031DDF5 = {
 			isa = PBXGroup;
 			children = (
+				440268D41992768A0004BB82 /* QuartzCore.framework */,
 				A22EDCC0198791600031DDF5 /* SampleTimer */,
 				A22EDCD7198791600031DDF5 /* SampleTimerTests */,
 				A22EDD19198793160031DDF5 /* SampleTimerKit */,
