@@ -8,6 +8,8 @@
 
 #import "STKTimerView.h"
 
+static CGFloat kHandLengthMargin = 10.0f; // 円の端と針の隙間
+
 @interface STKTimerView ()
 {
     CGPoint _handOrigin; // 針の中心
@@ -37,17 +39,29 @@
     [self.bgColor setFill];
     UIRectFill(rect);
     
+    [self drawHand:rect];
+    
     [super drawRect:rect];
 }
 
 - (void)animate
 {
-    // TODO...
+    // TODO
 }
 
 - (void)drawHand:(CGRect)rect
 {
-    // TODO...
+    _handOrigin = CGPointMake(self.bounds.origin.x + (self.bounds.size.width / 2),
+                              self.bounds.origin.y + (self.bounds.size.height / 2));
+    _handPoint = CGPointMake(_handOrigin.x, self.frame.origin.y + kHandLengthMargin);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetLineWidth(context, 3.0);
+    CGContextSetStrokeColorWithColor(context, self.handColor.CGColor);
+    CGContextSetLineCap(context, kCGLineCapRound);
+    CGContextMoveToPoint(context, _handOrigin.x, _handOrigin.y);
+    CGContextAddLineToPoint(context, _handPoint.x, _handPoint.y);
+    CGContextStrokePath(context);
 }
 
 @end
