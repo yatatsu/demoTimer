@@ -8,7 +8,7 @@
 
 #import "STKTimerView.h"
 
-static CGFloat kHandLengthMargin = 10.0f; // 円の端と針の隙間
+static CGFloat kHandLengthMargin = 5.0f; // 円の端と針の隙間
 
 @interface STKTimerView ()
 {
@@ -38,15 +38,21 @@ static CGFloat kHandLengthMargin = 10.0f; // 円の端と針の隙間
     
     [self.bgColor setFill];
     UIRectFill(rect);
-    
     [self drawHand:rect];
-    
     [super drawRect:rect];
+
+    [self.layer addAnimation:[self animate] forKey:nil];
 }
 
-- (void)animate
+- (CABasicAnimation *)animate
 {
-    // TODO
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform"];
+    animation.fromValue = [NSNumber numberWithDouble:0];
+    animation.toValue = [NSNumber numberWithDouble:2 * M_PI];
+    animation.valueFunction = [CAValueFunction functionWithName:kCAValueFunctionRotateZ];
+    animation.duration = 1;
+    animation.repeatCount = HUGE_VALF;
+    return animation;
 }
 
 - (void)drawHand:(CGRect)rect
