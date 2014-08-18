@@ -35,12 +35,12 @@ static CGFloat kHandLengthMargin = 5.0f; // 円の端と針の隙間
     // Drawing code
     self.layer.cornerRadius = rect.size.width / 2;
     self.clipsToBounds = YES;
-    
+//#if TARGET_INTERFACE_BUILDER
     [self.bgColor setFill];
+//#endif
     UIRectFill(rect);
     [self drawHand:rect];
     [super drawRect:rect];
-
     [self.layer addAnimation:[self animate] forKey:nil];
 }
 
